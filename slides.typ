@@ -412,12 +412,20 @@
 )
 
 #image-slide(background:image("img/carte_glacier_europe.png"))[
-#v(-1em)
-  #place[ Petite carte des glaciers en Europe.]
+  #place(top, dy: -1.5em)[
+    #my_box[ Petite carte des glaciers en Europe]
+  ]
 ]
 
+#figure(
+  image("img/Eurasia_countries.jpg", height: 100%),
+
+) 
+
 #image-slide(background:image("img/Marmolada-Dolomites.png"))[
-  #place[ Marmolada classé à l'UNESCO (disparu d'ici 2040).]
+  #place(top, dy: -1.5em)[
+    #my_box[Marmolada classé à l'UNESCO (disparu d'ici 2040).]
+  ]
 ]
 
 #image-slide-height(background:image("img/carte_glaciers_vanoises.jpg"))[
@@ -487,7 +495,34 @@
 ]
 
 #image-slide-height(background:image("img/berarde.jpg"))[
+  #place(top, dx: 2em,dy: -1.5em)[
+    #my_box_nojump[La Bérarde après le 21 juin 2024]
+  ]
+]
+
+#image-slide-height(background:image("img/Berarde-avant-BANDEAU-1024x576.jpg"))[
   #place[]
+]
+
+#image-slide-height(background:image("img/Berarde-apres-BANDEAU-1024x575.jpg"))[
+  #place[]
+]
+
+#image-slide-height(background:image("img/larose-berarde-bonnepierre-05.jpg"))[
+  #place[]
+]
+
+#image-slide-height(background:image("img/blatten.jpg"))[
+  #place(top, dx: 2em,dy: -1.5em)[
+    #my_box[Blatten (Suisse) 28 mai 2025, effondrement du glacier du Birch]
+  ]
+]
+
+#image-slide-height(background:image("img/lavetorrentielle.jpg"))[
+  #place(top, dx:-1.5em,dy: 2.5em)[
+    #my_box[Laves \
+torrentielles]
+  ]
 ]
 
 == Comment peut-on se protéger de l'événement de la Bérarde ?
@@ -535,10 +570,13 @@
 )
 
 #image-slide(background:image("img/pelle_araignee.jpg"))[
-  #place[Utilisé à Tignes pour vidanger lac glaciaire du Rosolin]
+  #place
+  #place(top, dx: -2em,dy: -1.5em)[
+    #my_box_nojump[Tignes : vidange du lac glaciaire du Rosolin]
+  ]
 ]
 
-== Et les calottes polaires dans tout ça ? Plus ou moins que les glaciers de montagne ?
+== Pourcentage de glace totale dans les Calottes Polaires ?
 #v(3em)
 #two-col(
   [
@@ -574,7 +612,7 @@
 
 #image-slide(background:image("img/glace_eau_vent.jpg"))[
   #place(top, dx: -1em, dy: -1.5em)[
-    #my_box_nojump[Bord d'océan, de mer, de lac ou de rivière ?]
+    #my_box_nojump[bord d'océan, de mer, de lac ou de rivière ?]
   ]
 ]
 
@@ -666,3 +704,7 @@ depuis la fin du Petit Age Glaciaire
 - https://geomorphologie-montagne.ch/fiche-glacier-11/
 - https://pedagotech.inp-toulouse.fr/210813/co/BDMG.html
 - https://www.futura-sciences.com/planete/definitions/climatologie-bilan-masse-12867/
+- https://alpinemag.fr/premiers-elements-analyse-geomorphologique-crue-berarde/
+- https://alpinemag.fr/berarde-premieres-conclusions-enquete-scientifique-origine-catastrophe/
+- https://www.wsl.ch/fr/a-propos-du-wsl/installations-experimentales-et-laboratoires/installations-experimentales-sur-les-dangers-naturels/feldbeobachtungen-und-datenerhebung/station-dobservation-de-laves-torrentielles/
+
