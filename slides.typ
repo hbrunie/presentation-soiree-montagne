@@ -101,13 +101,6 @@
     ]
 ]
 
-#image-slide(background:image("img/montblanc-cosmique.jpg"))[
-  #place[
-      #my_box[Quel est donc le thème de ce soir ?]
-    ]
-]
-
-
 
 #image-slide(background:image("img/vautour_proche.jpg"))[
   #place[
