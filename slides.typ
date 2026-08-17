@@ -320,14 +320,12 @@
 )
 
 
-== Quels sont les différents types de glaciers ?
+== Quelques types de glaciers
 
 - Glacier de Vallée
 - Glacier suspendu
 - Glacier régénéré
 - Glacier de cirque
-- Glacier de Piémont
-- Glacier côtier
 - Calotte locale
 - Inlandsis
 
@@ -665,6 +663,19 @@ torrentielles]
   #place(top, dy: -1.5em, dx: 10em)[
     #my_box([ Bord de LAC !])
   ]
+]
+
+#image-slide(background:image("img/as1.JPG"))[
+  #place[]
+]
+#image-slide(background:image("img/as2.JPG"))[
+  #place[]
+]
+#image-slide(background:image("img/as3.JPG"))[
+  #place[]
+]
+#image-slide(background:image("img/as4.JPG"))[
+  #place[]
 ]
 
 #image-slide(background:image("img/mer-glace-cosmique.jpg"))[
