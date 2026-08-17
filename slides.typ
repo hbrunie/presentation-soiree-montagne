@@ -54,6 +54,21 @@
   touying-slide(self: self, body)
 })
 
+#let my_box_nojump(body) = context {
+  let content = text(fill: white, weight: "bold")[#body]
+  let size = measure(content)
+
+  box(
+    width: size.width + 1.2em,
+    fill: rgb(0, 0, 0, 150),
+    inset: 0.6em,
+    radius: 0.3em,
+  )[
+    #content
+  ]
+}
+
+
 #let my_box(body) = {
       box(
         fill: rgb(0, 0, 0, 150),
@@ -558,7 +573,9 @@
 )
 
 #image-slide(background:image("img/glace_eau_vent.jpg"))[
-  #place[ Bord d'océan, bord de mer, bord de lac ou bord de rivière ?]
+  #place(top, dx: -1em, dy: -1.5em)[
+    #my_box_nojump[Bord d'océan, de mer, de lac ou de rivière ?]
+  ]
 ]
 
 ==  Où se situe-t-on ?
@@ -607,7 +624,9 @@
 )
 
 #image-slide(background:image("img/bord-de-lac.jpg"))[
-  #place[ Bord de LAC !]
+  #place(top, dy: -1.5em, dx: 10em)[
+    #my_box([ Bord de LAC !])
+  ]
 ]
 
 #image-slide(background:image("img/mer-glace-cosmique.jpg"))[
